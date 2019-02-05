@@ -15,13 +15,16 @@ using relevant medical literature and a patient history simulator. Then the POMD
 solved optimally for an infinite horizon, using the Perseus algorithm.
 
 This repository contains all the code used through the Masters Thesis. The script files were divided in five parts, following the order in which they are intended to be executed:
-1. Simulation: simulate 1 million women's breast cancer histories
+1. Simulation: 
+* downloading relevant cancer information through web scraping
+* simulating 1 million women's breast cancer histories
 
 2. Probability models: maximum likelihood estimation of the transition probabilities using the simulated patient histories
 
-3. Rewards: * building the state-based reward model 
-            * estimating the post-cancer rewards by applying the state-based reward model to the simulated patient histories
-            * building the full reward model combining the state and action based models
+3. Rewards: 
+* building the state-based reward model
+* estimating the post-cancer rewards by applying the state-based reward model to the simulated patient histories
+* building the full reward model combining the state and action based models
             
 4. POMDP Set-Up: formatting all the parameters, creating the .POMDP input file.
 Between parts 4 and 5: Solve the POMDP using a POMDP solver (Erwin Walraven's PERSEUS implemenation was used, refer to https://www.erwinwalraven.nl/solvepomdp/)
