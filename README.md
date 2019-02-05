@@ -19,14 +19,19 @@ This repository contains all the code used through the Masters Thesis. The scrip
 * downloading relevant cancer information through web scraping
 * simulating 1 million women's breast cancer histories
 
-2. Probability models: maximum likelihood estimation of the transition probabilities using the simulated patient histories
+2. Probability models:\
+maximum likelihood estimation of the transition probabilities using the simulated patient histories
 
 3. Rewards: 
 * building the state-based reward model
 * estimating the post-cancer rewards by applying the state-based reward model to the simulated patient histories
 * building the full reward model combining the state and action based models
             
-4. POMDP Set-Up: formatting all the parameters, creating the .POMDP input file.
-Between parts 4 and 5: Solve the POMDP using a POMDP solver (Erwin Walraven's PERSEUS implemenation was used, refer to https://www.erwinwalraven.nl/solvepomdp/)
+4. POMDP Set-Up:\
+formatting all the parameters, creating the .POMDP input file.\
+\
+Between parts 4 and 5:\
+Solve the POMDP using a POMDP solver (Erwin Walraven's PERSEUS implemenation was used, refer to https://www.erwinwalraven.nl/solvepomdp/)
 
-5. Policy Interpretation: using the alpha vectors contained in the .alpha output file to form the optimal policy as a function of the belief state
+5. Policy Interpretation:\
+using the alpha vectors contained in the .alpha output file to form the optimal policy as a function of the belief state
